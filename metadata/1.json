@@ -1,0 +1,12 @@
+{
+  "name": "Dogs Drinking",
+  "description": "This is my first NFT created with my ERC721 contract",
+  "image": "https://ipfs.io/ipfs/bafybeifo7s2uf4vqa6jh6ajomvjdvkyjuvh2gq2hv6in2a2u6wgnsc6dpm",
+  "attributes": [
+    {
+      "trait_type": "Rareza",
+      "value": "Epico"
+    }
+  ]
+ 
+} 
