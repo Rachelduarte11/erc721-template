@@ -1,0 +1,15 @@
+{
+    "name": "Dogs Drinking #3",
+    "description": "Tercer NFT de la colección Dogs Drinking.",
+    "image": "ipfs://bafybeihlrfaqlwr2whj5rmlrmbqntp7ppqetykheyrywpn35r7gsdt52uq",
+    "attributes": [
+      {
+        "trait_type": "Rareza",
+        "value": "Común"
+      },
+      {
+        "trait_type": "Ambiente",
+        "value": "salon"
+      }
+    ]
+  }

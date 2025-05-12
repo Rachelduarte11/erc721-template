@@ -27,11 +27,21 @@ async function uploadToPinata(filePath) {
 
 async function main() {
     // Upload metadata file
-    const metadataPath = path.join(__dirname, '../metadata/1.json');
-    const metadataHash = await uploadToPinata(metadataPath);
-    console.log('\nMetadata uploaded!');
-    console.log(`Metadata IPFS Hash: ${metadataHash}`);
-    console.log(`View metadata at: https://gateway.pinata.cloud/ipfs/${metadataHash}`);
+    const metadataPath = path.join(__dirname, '../metadata/Dogs-drinking.json');
+    console.log('Uploading metadata from:', metadataPath);
+    
+    try {
+        const metadataHash = await uploadToPinata(metadataPath);
+        console.log('\nMetadata uploaded successfully!');
+        console.log(`Metadata IPFS Hash: ${metadataHash}`);
+        console.log(`View metadata at: https://gateway.pinata.cloud/ipfs/${metadataHash}`);
+        
+        // Update the mint.js script with the new hash
+        console.log('\nPlease update your mint.js script with this new IPFS hash:');
+        console.log(`ipfs://${metadataHash}`);
+    } catch (error) {
+        console.error('Failed to upload metadata:', error);
+    }
 }
 
 main()

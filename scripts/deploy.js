@@ -5,13 +5,14 @@ async function main() {
 
   console.log("Deploying contracts with the account:", deployer.address);
 
-  const baseURI = "ipfs://QmYwAPJzv5CZsnA625s3Xf2nemtYgPpHdWEz79ojWnPbdG/";
+  // We'll use a temporary baseURI that we can update later
+  const baseURI = "ipfs://";
   
   // Deploy the contract
   const MyERC721Token = await hre.ethers.getContractFactory("MyERC721Token");
   const myERC721Token = await MyERC721Token.deploy(
-    "My NFT Collection",
-    "MNFT",
+    "Dogs Drinking Collection",
+    "DOGS",
     baseURI
   );
 

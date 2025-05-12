@@ -1,0 +1,15 @@
+{
+    "name": "Dogs Drinking #2",
+    "description": "NFT of dogs sitting at a table, enjoying beer together. Part of the Dogs Drinking Collection.",
+    "image": "ipfs://bafybeiaaia6xwtmrvvb2d3m6rwlrwbkhibkzd22yghqzwvgproiiw6aqwi",
+    "attributes": [
+      {
+        "trait_type": "Rareza",
+        "value": "Legendario"
+      },
+      {
+        "trait_type": "Ambiente",
+        "value": "Bar"
+      }
+    ]
+  }
